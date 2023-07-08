@@ -1,0 +1,35 @@
+<mvc:View controllerName="UsersCrud.controller.Main" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:l="sap.ui.layout">
+	<App>
+		<Page title="Users">
+			<content>
+				<VBox id='vbox' alignItems="Center" alignContent="Center">
+					<items>
+						<HBox id='btns'>
+							<Button id="createBTN" press="onCreate" text="Create" type="Emphasized"  class="sapUiSmallMarginEnd"/>
+							<Button id="readBTN"   press="onRead" text="Read"  class="sapUiSmallMarginEnd"/>
+							<Button id="updateBTN" press="onOdataCall" text="Update" type="Emphasized"  class="sapUiSmallMarginEnd"/>
+							<Button id="deleteBTN" press="onOdataCall" text="Delete"/>
+						</HBox>
+						<VBox>
+							<Input id="ID" placeholder="User ID" width='8rem'/>
+							<Input id="name" placeholder="User Name" width='20rem'/>
+							<Input id="email" placeholder="User email" width='20rem'/>
+							<Input id="phone" placeholder="User phone" width='20rem'/>
+						</VBox>
+						<HBox>
+							<Table id="userData" headerText="User Data">
+								<columns>
+									<Column> <header> <Text text="User Id" /></header></Column>
+									<Column> <header> <Text text="User Name" /> </header></Column>
+									<Column> <header> <Text text="User Email" /> </header></Column>
+									<Column> <header> <Text text="User Phone" /> </header></Column>
+								</columns>
+							</Table>
+						</HBox>
+					</items>
+				</VBox>
+			</content>
+		</Page>
+	</App>
+</mvc:View>
