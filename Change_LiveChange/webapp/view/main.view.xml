@@ -1,0 +1,21 @@
+<mvc:View controllerName="Change_LiveChange.controller.main" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:layout="sap.ui.layout">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<layout:VerticalLayout id="i_vlayout" binding="{/People}">
+						<layout:HorizontalLayout>
+							<Label text="onChange"></Label>
+							<Input id="id_change" change="onChange"></Input>
+						</layout:HorizontalLayout>
+						<layout:HorizontalLayout>
+							<Label text="onLiveChange"></Label>
+							<Input id="id_liveChange" liveChange="onLiveChange"></Input>
+						</layout:HorizontalLayout>
+					</layout:VerticalLayout>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
